@@ -1,10 +1,11 @@
 import React from "react";
 import { BrowserRouter as Router } from "react-router-dom";
+import Intro from "./components/Bio/Intro";
 
 const App = () => {
   return (
     <Router>
-      <h1>Hello World!</h1>
+      <Intro />
     </Router>
   );
 };
