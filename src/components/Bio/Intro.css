@@ -3,7 +3,7 @@
   width: 90%;
   margin: 1rem auto;
   align-items: center;
-  height: 80vh;
+  min-height: 80vh;
 }
 
 .intro-left-area {
@@ -39,6 +39,7 @@
   letter-spacing: 0.5px;
   text-transform: capitalize;
   margin-bottom: 10px;
+  color: #2e2e2e;
 }
 
 .intro-text p {
