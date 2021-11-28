@@ -1,9 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import Button from "../UI/Button";
 
 import "./News.css";
 
 const News = () => {
+  const [enteredInput, setEnteredInput] = useState("");
+
+  const inpChangeHandler = (event) => {
+    setEnteredInput(event.target.value);
+  };
+
+  const submitHandler = (event) => {
+    event.preventDefault();
+    console.log(enteredInput);
+    setEnteredInput("");
+  };
   return (
     <>
       <div className="news-container">
@@ -15,8 +26,15 @@ const News = () => {
         </div>
 
         <div className="form">
-          <input type="email" placeholder="Drop your email" />
-          <Button type="submit">Subscribe</Button>
+          <input
+            type="email"
+            placeholder="Drop your email"
+            onChange={inpChangeHandler}
+            value={enteredInput}
+          />
+          <Button type="submit" onClick={submitHandler}>
+            Subscribe
+          </Button>
         </div>
       </div>
     </>

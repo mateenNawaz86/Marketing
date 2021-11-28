@@ -4,7 +4,7 @@ import "./BtnOutline.css";
 
 const BtnOutline = (props) => {
   return (
-    <button className="btn-outline" type={props.type}>
+    <button className="btn-outline" type={props.type} onClick={props.onClick}>
       {props.children}
     </button>
   );
