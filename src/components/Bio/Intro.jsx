@@ -24,7 +24,9 @@ const Intro = () => {
             </p>
 
             <p>It's 2019 time to sink or swim</p>
-            <Button type="submit">See More</Button>
+            <div className="intro-btn">
+              <Button type="submit">See More</Button>
+            </div>
           </div>
         </div>
       </div>
