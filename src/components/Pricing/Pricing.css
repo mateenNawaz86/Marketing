@@ -101,6 +101,11 @@
 }
 
 @media (max-width: 480px) {
+  .inner-price-container {
+    width: 90%;
+  }
+
+  
   .price-item {
     flex: 0 1 100%;
   }
